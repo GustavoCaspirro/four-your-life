@@ -1,27 +1,54 @@
-# FourYourLife
+# 4YourLife
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+## Sobre
+...
 
-## Development server
+## Passos para rodar o projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Verificar se possue node, npm e vue instalados.
 
-## Code scaffolding
+- Versão do Node
+```sh
+$ node -v
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Versão NPM
+```sh
+$ npm -v
+```
 
-## Build
+- Versão Angular
+```sh
+$ ng version
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Caso não tenha o node instalado
+- Acesse [node.js](https://nodejs.org/en/) e baixe a versão mais recente, por padrão o npm já será instalado.
 
-## Running unit tests
+### Caso não tenha o Angular instalado
+- Digite o comando abaixo para instalar
+```sh
+$ npm install -g @angular/cli
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Clonar o projeto
+```
+$ git clone projetoClonado
+```
 
-## Running end-to-end tests
+### Rodar o projeto
+```
+$ cd projetoClonado
+$ npm install
+$ ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Versão
+1.0.0
 
-## Further help
+# Autores 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* **Bruno Luiz** - [Bruno Luiz]()
+* **Gustavo Caspirro** - [Gustavo Caspirro](https://github.com/GustavoCaspirro)
+* **Lucas Barcelos** - [Lucas Barcelos]()
+* **Ricardo Santana** - [Ricardo Santana Lopes](https://github.com/RicardoSLopes)
