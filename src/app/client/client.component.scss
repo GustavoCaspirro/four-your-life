@@ -1,0 +1,47 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/components';
+@import '../../assets/styles/helpers';
+
+//
+// Client
+//
+
+.bg-client {
+    background-image: url(../../assets/images/bg-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.client-desc {
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+    .owl-theme {
+        .owl-controls {
+            margin-top: 70px;
+            .owl-page {
+                span {
+                    background-color: $dark-green;
+                    display: block;
+                    height: 7px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+.clinet-img {
+    img {
+        background: $white;
+        box-shadow: 0px 0px 20px 0px rgba(239, 239, 239, 0.6);
+        padding: 12px;
+        width: 120px;
+        
+    }
+}
+
+.client-logo {
+    background-color: $light;
+}
