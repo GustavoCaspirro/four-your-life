@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/components';
+@import '../../assets/styles/helpers';
+
+//
+// features.scss
+//
+
+.features-title {
+    font-size: 40px;
+}
+
+.features-icon {
+    background-color: $pink;
+    border-radius: 4px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    width: 44px;
+
+    svg {
+        color: $white;
+    }
+}
+  
+  
+.features-content-3{
+    overflow: hidden;
+}
