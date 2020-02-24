@@ -1,6 +1,6 @@
-@import '../../assets/styles/variables';
-@import '../../assets/styles/components';
-@import '../../assets/styles/helpers';
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/components';
+@import '../../../assets/styles/helpers';
 
 //
 // menu.scss
@@ -142,7 +142,7 @@
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: $pink !important;
+    color: $dark-green !important;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
@@ -189,7 +189,7 @@
     .navbar-custom .navbar-nav li.active a,
     .navbar-custom .navbar-nav li a:hover,
     .navbar-custom .navbar-nav li a:active {
-        color: $pink !important;
+        color: $dark-green !important;
     }
   
    

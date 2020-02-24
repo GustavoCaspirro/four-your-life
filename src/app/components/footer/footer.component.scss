@@ -1,6 +1,6 @@
-@import '../../assets/styles/variables';
-@import '../../assets/styles/components';
-@import '../../assets/styles/helpers';
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/components';
+@import '../../../assets/styles/helpers';
 
 //
 // footer.scss
@@ -67,7 +67,7 @@
 }
 
 .footer-bg-overlay {
-    background: url(../../assets/images/overlay.png);
+    background: url(../../../assets/images/overlay.png);
     bottom: 0;
     height: 100%;
     left: 0;
