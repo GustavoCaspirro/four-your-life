@@ -16,6 +16,7 @@ import { ScreenshotComponent } from './screenshot/screenshot.component';
 import { DownloadComponent } from './download/download.component';
 import { ClientComponent } from './client/client.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ContactComponent } from './contact/contact.component';
     ScreenshotComponent,
     DownloadComponent,
     ClientComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,100 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/components';
+@import '../../assets/styles/helpers';
+
+//
+// footer.scss
+//
+
+.subscribe-heading{
+    position: relative;
+    z-index: 9;
+}
+
+.subcribe-form {
+    position: relative;
+    z-index: 9;
+    input {
+        background-color: rgba(255, 255, 255, 0.13);
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        font-size: 14px;
+        outline: none !important;
+        padding: 22px 30px;
+        padding-right: 180px;
+        width: 100%;
+    }
+    button {
+        position: absolute;
+        right: 12px;
+        top: 11px;
+    }
+    form {
+        margin: 0px auto;
+        max-width: 700px;
+        position: relative;
+    }
+
+    
+    input {
+        &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: normal;
+        }
+
+        &:-moz-placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        &::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        &:-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+
+.footer {
+    background: $bg-gradient;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+.footer-bg-overlay {
+    background: url(../../assets/images/overlay.png);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+
+.footer-heading {
+    letter-spacing: 2px;
+}
+
+.footer-link {
+    a {
+        color: rgba($white, 0.5);
+        line-height: 40px;
+        transition: all 0.5s;
+        &:hover {
+            color: $white;
+        }
+    }
+    
+}
+
+.footer-content{
+    position: relative;
+    z-index: 9;
+}
