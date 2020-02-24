@@ -1,0 +1,54 @@
+ <!-- START CONTACT -->
+ <section class="section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="title-heading text-center">Contact Us</h1>
+                <p class="title-desc text-center text-muted mt-4">Tentesque habitant morbi tristique senectus et netus malesuada fames turpis egestas quisque congue felis euismod Vestibulum ac vitae fringilla.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-10">
+                <div class="custom-form mt-3">
+                    <div id="message"></div>
+                    <form method="post" action="php/contact.php" name="contact-form" id="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group mt-2">
+                                    <input name="name" id="name" class="form-control" placeholder="Name" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group mt-2">
+                                    <input name="email" id="email" class="form-control" placeholder="Email" type="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <input class="form-control" id="subject" placeholder="Subject" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group mt-2">
+                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Massage"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 mt-3 text-center">
+                                <input id="submit" name="send" class="submitBnt btn btn-custom btn-round" value="Send Message" type="submit">
+                                <div id="simple-msg"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CONTACT -->

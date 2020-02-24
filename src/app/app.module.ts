@@ -15,6 +15,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ScreenshotComponent } from './screenshot/screenshot.component';
 import { DownloadComponent } from './download/download.component';
 import { ClientComponent } from './client/client.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ClientComponent } from './client/client.component';
     PricingComponent,
     ScreenshotComponent,
     DownloadComponent,
-    ClientComponent
+    ClientComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
