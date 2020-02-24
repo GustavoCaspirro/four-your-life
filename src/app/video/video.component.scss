@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/components';
+@import '../../assets/styles/helpers';
+
+//
+// Video
+//
+
+
+.video {
+    background-color: $dark-green;
+
+    .icon-play {
+        background-color: $white;
+        border-radius: 50%;
+        color: $green;
+        display: inline-block;
+        font-size: 40px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        width: 80px;
+    }
+
+    &--title {
+        color: $white;
+        font-size: 30px;
+    }
+}
