@@ -3,8 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// PWA
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+
+// Components
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
@@ -18,6 +22,9 @@ import { ClientComponent } from './components/client/client.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScrollDirective } from './directives/scroll/scroll.directive';
+
+// Carousel
+import { OwlModule } from 'ngx-owl-carousel';  
 
 @NgModule({
   declarations: [
@@ -39,7 +46,8 @@ import { ScrollDirective } from './directives/scroll/scroll.directive';
     BrowserModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    OwlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,33 +12,27 @@
         <div class="row mt-5 justify-content-center">
             <div class="col-lg-8">
                 <div id="owl-demo">
-
-                    <div class="client-content text-center mt-4">
+                    <owl-carousel
+                        [options]="SlideOptions"
+                        [items]="people"
+                        [carouselClasses]="['owl-theme', 'sliding']"
+                    >  
+                    <div
+                        class="client-content text-center mt-4"
+                        *ngFor="let person of people"
+                    >
                         <div class="clinet-img">
-                            <img src="../../assets/images/users/img-1.jpg" class="img-fluid rounded-circle" alt="">
+                            <img
+                                src="../../assets/images/users/{{ person.img }}"
+                                class="img-fluid rounded-circle"
+                                alt="Foto de Pessoa que comentou sobre o aplicativo"
+                            />
                         </div>
-                        <h5 class="mt-4">Raymond Sloan</h5>
-                        <p class="f-12">Web Developer</p>
-                        <p class="f-16 client-desc">"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."</p>
+                        <h5 class="mt-4">{{ person.name }}</h5>
+                        <p class="f-12">{{ person.jobRole }}</p>
+                        <p class="f-16 client-desc">{{ person.comment }}</p>
                     </div>
-
-                    <div class="client-content text-center mt-4">
-                        <div class="clinet-img">
-                            <img src="../../assets/images/users/img-2.jpg" class="img-fluid rounded-circle" alt="">
-                        </div>
-                        <h5 class="mt-4">Mary Shriner</h5>
-                        <p class="f-12">Web Designer</p>
-                        <p class="f-16 client-desc">"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."</p>
-                    </div>
-
-                    <div class="client-content text-center mt-4">
-                        <div class="clinet-img">
-                            <img src="../../assets/images/users/img-3.jpg" class="img-fluid rounded-circle" alt="">
-                        </div>
-                        <h5 class="mt-4">Robert Garrett</h5>
-                        <p class="f-12">Web Developer</p>
-                        <p class="f-16 client-desc">"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."</p>
-                    </div>
+                    </owl-carousel>
 
                 </div>
             </div>

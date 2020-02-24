@@ -10,69 +10,21 @@
 
         <div class="row mt-5 pt-4">
             <div class="col-lg-12">
-                <div id="owl-carousel">
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-1.png" title=""></a>
-                        </div>
+                <owl-carousel
+                    [options]="SlideOptions"
+                    [items]="images"
+                    [carouselClasses]="['owl-theme', 'sliding']"
+                >  
+                    <div class="item mt-4" *ngFor="let img of images">
                         <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-1.png" class="img-fluid" alt="">
+                            <img
+                                src="../../assets/images/screenshot/{{img}}"
+                                class="img-fluid"
+                                alt="ScreenShot App"
+                            />  
                         </div>
-                    </div>
-
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-2.png" title=""></a>
-                        </div>
-                        <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-2.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-3.png" title=""></a>
-                        </div>
-                        <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-3.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-4.png" title=""></a>
-                        </div>
-                        <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-4.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-5.png" title=""></a>
-                        </div>
-                        <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-5.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-1.png" title=""></a>
-                        </div>
-                        <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-1.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image" href="../../assets/images/screenshot/img-alt-2.png" title=""></a>
-                        </div>
-                        <div class="screenshot-img">
-                            <img src="../../assets/images/screenshot/img-2.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
+                    </div> 
+                </owl-carousel>
             </div>
         </div>
     </div>
