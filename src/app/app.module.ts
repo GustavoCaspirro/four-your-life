@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
 import { VideoComponent } from './video/video.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { ScreenshotComponent } from './screenshot/screenshot.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PricingComponent } from './pricing/pricing.component';
     AboutComponent,
     FeaturesComponent,
     VideoComponent,
-    PricingComponent
+    PricingComponent,
+    ScreenshotComponent
   ],
   imports: [
     BrowserModule,
