@@ -26,9 +26,16 @@ export class ClientComponent implements OnInit {
       jobRole: 'Back End Developer',
       comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
     },
-  ];  
-  
-  SlideOptions = { items: 1, dots: true, nav: false };
+  ];
+
+  SlideOptions = {
+    items: 1,
+    dots: true,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    loop: true
+  };
 
   constructor() { }
 

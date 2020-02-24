@@ -12,13 +12,19 @@ export class ScreenshotComponent implements OnInit {
     'img-3.png',
     'img-4.png',
     'img-5.png'
-  ];  
-  
-  SlideOptions = { items: 3, dots: true, nav: false };
+  ];
+
+  SlideOptions = {
+    items: 3,
+    dots: true,
+    nav: false,
+    autoplay: false,
+    autoplayTimeout: 0,
+    loop: false
+  };
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

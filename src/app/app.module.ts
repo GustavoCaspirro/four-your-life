@@ -24,7 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ScrollDirective } from './directives/scroll/scroll.directive';
 
 // Carousel
-import { OwlModule } from 'ngx-owl-carousel';  
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
