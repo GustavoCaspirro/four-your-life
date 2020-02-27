@@ -32,12 +32,14 @@
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",  
               "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
+              "./node_modules/magnific-popup/dist/magnific-popup.css",
               "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",  
               "./node_modules/owl.carousel/dist/owl.carousel.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "./node_modules/magnific-popup/dist/jquery.magnific-popup.js"
             ]
           },
           "configurations": {

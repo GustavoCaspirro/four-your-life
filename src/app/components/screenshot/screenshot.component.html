@@ -9,14 +9,18 @@
         </div>
 
         <div class="row mt-5 pt-4">
-            <div class="col-lg-12">
+            <div class="col-lg-12" #parentContainer>
                 <owl-carousel
                     [options]="SlideOptions"
                     [items]="images"
                     [carouselClasses]="['owl-theme', 'sliding']"
                 >
                     <div class="item mt-4" *ngFor="let img of images">
-                        <div class="screenshot-img">
+                        <div class="screenshot-overlay">
+                            <a class="mfp-image image-link" href="../../assets/images/screenshot/{{img}}"></a>
+                        </div>
+                        
+                        <div class="screenshot-img" class="parent-container">
                             <img
                                 src="../../assets/images/screenshot/{{img}}"
                                 class="img-fluid"

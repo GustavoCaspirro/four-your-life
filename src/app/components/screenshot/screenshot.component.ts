@@ -1,11 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+
+import * as $ from 'jquery';
+import 'magnific-popup';
 
 @Component({
   selector: 'fyl-screenshot',
   templateUrl: './screenshot.component.html',
   styleUrls: ['./screenshot.component.scss']
 })
-export class ScreenshotComponent implements OnInit {
+
+export class ScreenshotComponent implements OnInit, AfterViewInit {
+  @ViewChild('parentContainer') parentContainerElement: ElementRef;
+
   images = [
     'img-1.png',
     'img-2.png',
@@ -39,5 +45,47 @@ export class ScreenshotComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit(): void {
+    this.createGalleryMagnificPopup();
+  }
+
+  createGalleryMagnificPopup(): void {
+    $(this.parentContainerElement.nativeElement).each( function() {
+      var $container = $(this);
+      var $imageLinks = $container.find('.mfp-image');
+
+      var items = [];
+
+      $imageLinks.each(function() {
+        var $item = $(this);
+        var type = 'image';
+        var magItem = {
+          src: $item.attr('href'),
+          type: type
+        };
+        items.push(magItem);
+      });
+
+      $imageLinks.magnificPopup({
+        mainClass: 'mfp-fade',
+        items: items,
+        type: 'image',
+        gallery: {
+          enabled: true,
+          tPrev: $(this).data('prev-text'),
+          tNext: $(this).data('next-text')
+        },
+        callbacks: {
+          beforeOpen: function() {
+            var index = $imageLinks.index(this.st.el);
+            if (-1 !== index) {
+              this.goTo(index)
+            }
+          }
+        }
+      })
+    });
   }
 }
