@@ -64,7 +64,7 @@
 }
 
 .button-next-page {
-    bottom: 100px;
+    animation: MoveUpDown 2s linear infinite;
     position: absolute;
     z-index: 1;
     
@@ -80,31 +80,33 @@
     }
 }
 
-.bg-home-3 {
+.home {
     background: $bg-gradient;
     background-size: cover;
     background-position: center center;
     padding: 100px 0 0;
     position: relative;
+
     @media screen and (min-width: 768px) {
+        height: 100vh;
         padding: 0;
     }
-}
 
-.home-icon-3{
-    i{
-        color: $white;
-        font-size: 30px;
+    &__icon {
+        i {
+            color: $white;
+            font-size: 30px;
+        }
     }
-}
 
-.home-title-3{
-    color: $white;
-    font-size: 32px;
-}
+    &__title {
+        color: $white;
+        font-size: 32px;
+    }
 
-.home-desc-3{
-    font-size: 16px;
+    &__desc {
+        font-size: 16px;
+    }
 }
 
 .start-form {
@@ -116,14 +118,27 @@
         padding-right: 180px;
         width: 100%;
     }
+
     button {
         padding: 12px 24px;
         position: absolute;
         right: 0;
         top: 0;
     }
+
     form {
         position: relative;
         max-width: 450px;
+    }
+}
+
+// Keyframes
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 40px;
+    }
+
+    50% {
+        bottom: 45px;
     }
 }

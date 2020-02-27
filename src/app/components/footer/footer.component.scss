@@ -14,6 +14,7 @@
 .subcribe-form {
     position: relative;
     z-index: 9;
+
     input {
         background-color: rgba(255, 255, 255, 0.13);
         border: none;
@@ -24,20 +25,7 @@
         padding: 22px 30px;
         padding-right: 180px;
         width: 100%;
-    }
-    button {
-        position: absolute;
-        right: 12px;
-        top: 11px;
-    }
-    form {
-        margin: 0px auto;
-        max-width: 700px;
-        position: relative;
-    }
 
-    
-    input {
         &::-webkit-input-placeholder {
             color: rgba(255, 255, 255, 0.4);
             font-weight: normal;
@@ -55,6 +43,18 @@
             color: rgba(255, 255, 255, 0.4);
         }
     }
+
+    button {
+        position: absolute;
+        right: 12px;
+        top: 11px;
+    }
+
+    form {
+        margin: 0px auto;
+        max-width: 700px;
+        position: relative;
+    }
 }
 
 .footer {
@@ -62,8 +62,11 @@
     background-size: cover;
     background-position: center center;
     position: relative;
-    padding-bottom: 50px;
-    padding-top: 70px;
+    padding: 15px 0 16px;
+
+    @media screen and (min-width: 768px) {
+        padding: 70px 0 20px;
+    }
 }
 
 .footer-bg-overlay {
