@@ -20,7 +20,20 @@ export class ScreenshotComponent implements OnInit {
     nav: false,
     autoplay: false,
     autoplayTimeout: 0,
-    loop: false
+    loop: false,
+    mouseDrag: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      951: {
+        items: 3
+      }
+    }
   };
 
   constructor() { }
