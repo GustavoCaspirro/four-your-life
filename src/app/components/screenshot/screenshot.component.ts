@@ -53,24 +53,24 @@ export class ScreenshotComponent implements OnInit, AfterViewInit {
 
   createGalleryMagnificPopup(): void {
     $(this.parentContainerElement.nativeElement).each( function() {
-      var $container = $(this);
-      var $imageLinks = $container.find('.mfp-image');
+      const $container = $(this);
+      const $imageLinks = $container.find('.mfp-image');
 
-      var items = [];
+      const items = [];
 
       $imageLinks.each(function() {
-        var $item = $(this);
-        var type = 'image';
-        var magItem = {
+        const $item = $(this);
+        const type = 'image';
+        const magItem = {
           src: $item.attr('href'),
-          type: type
+          type
         };
         items.push(magItem);
       });
 
       $imageLinks.magnificPopup({
         mainClass: 'mfp-fade',
-        items: items,
+        items,
         type: 'image',
         gallery: {
           enabled: true,
