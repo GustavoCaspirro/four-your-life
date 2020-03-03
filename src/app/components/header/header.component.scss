@@ -122,7 +122,7 @@
         padding: 15px 0;
 
         &.sticky-dark {
-            background-color: $white;
+            background-color: $green;
         }
     }
     .logo {
@@ -139,11 +139,11 @@
 }
 
 
-.nav-sticky.navbar-custom .navbar-nav li.active a,
-.nav-sticky.navbar-custom .navbar-nav li a:hover,
-.nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: $dark-green !important;
-}
+// .nav-sticky.navbar-custom .navbar-nav li.active a,
+// .nav-sticky.navbar-custom .navbar-nav li a:hover,
+// .nav-sticky.navbar-custom .navbar-nav li a:active {
+//     color: $dark-green !important;
+// }
 
 .nav-sticky.navbar-custom .navbar-toggles {
     border: 1px solid transparent;
