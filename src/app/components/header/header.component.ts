@@ -12,12 +12,17 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  closeMenu(): void {
+  closeMenu(element: any): void {
     const visibleMenu = document.querySelector('.navbar-collapse.show');
+    const currentActiveMenu = document.querySelector('.active');
 
     if (visibleMenu) {
       visibleMenu.classList.remove('show');
     }
+
+    currentActiveMenu.classList.remove('active');
+    element.currentTarget.classList.add('active');
+
   }
 
 }
