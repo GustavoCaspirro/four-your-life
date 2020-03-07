@@ -70,13 +70,17 @@
         text-align: left;
     }
 
+    .box-logo {
+        text-align: center;
+    }
+
     .logo {
         height: 90px;
-        margin-bottom: 50px;
+        margin-top: 20px;
 
         @media screen and (min-width: 768px) {
             height: 140px;
-            margin-bottom: 0;
+            margin-top: 0;
         } 
     }
 }

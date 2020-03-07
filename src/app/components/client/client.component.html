@@ -16,22 +16,23 @@
                         [options]="SlideOptions"
                         [items]="people"
                         [carouselClasses]="['owl-theme', 'sliding']"
-                    >  
-                    <div
-                        class="client-content text-center mt-4"
-                        *ngFor="let person of people"
                     >
-                        <div class="clinet-img">
-                            <img
-                                src="../../assets/images/users/{{ person.img }}"
-                                class="img-fluid rounded-circle"
-                                alt="Foto de Pessoa que comentou sobre o aplicativo"
-                            />
-                        </div>
-                        <h5 class="mt-4">{{ person.name }}</h5>
-                        <p class="f-12">{{ person.jobRole }}</p>
-                        <p class="f-16 client-desc">{{ person.comment }}</p>
-                    </div>
+
+                        <ng-container *ngFor="let person of people">
+                            <div class="client-content text-center mt-4">
+                                <div class="clinet-img">
+                                    <img
+                                        src="../../assets/images/users/{{ person.img }}"
+                                        class="img-fluid rounded-circle"
+                                        alt="Foto de Pessoa que comentou sobre o aplicativo"
+                                    />
+                                </div>
+                                <h5 class="mt-4">{{ person.name }}</h5>
+                                <p class="f-12">{{ person.jobRole }}</p>
+                                <p class="f-16 client-desc">{{ person.comment }}</p>
+                            </div>
+                        </ng-container>
+                    
                     </owl-carousel>
 
                 </div>

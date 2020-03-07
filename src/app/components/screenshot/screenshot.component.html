@@ -15,7 +15,8 @@
                     [items]="images"
                     [carouselClasses]="['owl-theme', 'sliding']"
                 >
-                    <div class="item mt-4" *ngFor="let img of images">
+                <ng-container *ngFor="let img of images">
+                    <div class="item mt-4">
                         <div class="screenshot-overlay">
                             <a class="mfp-image image-link" href="../../assets/images/screenshot/{{img}}"></a>
                         </div>
@@ -28,6 +29,7 @@
                             />  
                         </div>
                     </div> 
+                </ng-container>
                 </owl-carousel>
             </div>
         </div>
