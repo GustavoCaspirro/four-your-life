@@ -12,4 +12,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  closeMenu(): void {
+    const visibleMenu = document.querySelector('.navbar-collapse.show');
+
+    if (visibleMenu) {
+      visibleMenu.classList.remove('show');
+    }
+  }
+
 }

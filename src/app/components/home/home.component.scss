@@ -39,7 +39,8 @@
 }
 
 .home-bg-overlay {
-    background: url(../../../assets/images/overlay.png);
+    background: url(../../../assets/images/bg-home.jpg);
+    background-size: cover;
     bottom: 0;
     height: 100%;
     left: 0;
@@ -81,7 +82,7 @@
 }
 
 .home {
-    background: $bg-gradient;
+    // background: $bg-gradient;
     background-size: cover;
     background-position: center center;
     padding: 100px 0 0;

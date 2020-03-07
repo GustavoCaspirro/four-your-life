@@ -132,18 +132,11 @@
     .navbar-nav {
         li {
             a {
-                color: $dark !important;
+                color: rgba($white, .6) !important;
             }
         }
     }
 }
-
-
-// .nav-sticky.navbar-custom .navbar-nav li.active a,
-// .nav-sticky.navbar-custom .navbar-nav li a:hover,
-// .nav-sticky.navbar-custom .navbar-nav li a:active {
-//     color: $dark-green !important;
-// }
 
 .nav-sticky.navbar-custom .navbar-toggles {
     border: 1px solid transparent;
@@ -162,7 +155,7 @@
 @media (min-width: 200px) and (max-width: 768px) {
 
     .navbar-custom {
-        background-color: $white !important;
+        background-color: $green !important;
         box-shadow: 0 10px 33px rgba(0, 0, 0, .1);
         color: $white !important;
         margin-top: 0;
@@ -175,7 +168,7 @@
                     border-color: transparent;
                 }
                 a {
-                    color: $dark !important;
+                    color: rgba($white, .6) !important;
                     margin: 0;
                     transition: all 0.4s;
                 }
@@ -189,7 +182,7 @@
     .navbar-custom .navbar-nav li.active a,
     .navbar-custom .navbar-nav li a:hover,
     .navbar-custom .navbar-nav li a:active {
-        color: $dark-green !important;
+        color: $white !important;
     }
   
    
