@@ -10,22 +10,28 @@ export class ClientComponent implements OnInit {
   people = [
     {
       img: 'img-1.jpg',
-      name: 'Raymond Sloan',
-      jobRole: 'Web Developer',
+      name: 'Bruno',
+      jobRole: 'Back End and Android Developer',
       comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
     },
     {
       img: 'img-2.jpg',
-      name: 'Mary Shriner',
-      jobRole: 'Front End Developer',
+      name: 'Gustavo',
+      jobRole: 'Front End Developer and UI/UX',
       comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
     },
     {
       img: 'img-3.jpg',
-      name: 'Robert Garrett',
-      jobRole: 'Back End Developer',
+      name: 'Lucas',
+      jobRole: 'iOS Developer',
       comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
     },
+    {
+      img: 'img-3.jpg',
+      name: 'Ricardo',
+      jobRole: 'Developer',
+      comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
+    }
   ];
 
   SlideOptions = {
@@ -33,7 +39,7 @@ export class ClientComponent implements OnInit {
     dots: true,
     nav: false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 8000,
     loop: true
   };
 

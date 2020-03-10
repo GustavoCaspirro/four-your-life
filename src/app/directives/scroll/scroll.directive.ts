@@ -12,7 +12,7 @@ export class ScrollDirective {
 
     const scrollWindow = window.scrollY;
 
-    scrollWindow >= 300 ?
+    scrollWindow >= 100 ?
       (document.querySelector('.sticky') as HTMLElement).classList.add('nav-sticky') :
       (document.querySelector('.sticky') as HTMLElement).classList.remove('nav-sticky');
   }
