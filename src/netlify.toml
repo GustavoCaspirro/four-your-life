@@ -1,0 +1,4 @@
+# A Basic redirects rule
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
