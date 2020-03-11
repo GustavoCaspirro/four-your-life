@@ -28,6 +28,9 @@
               "src/assets",
               "src/manifest.webmanifest"
             ],
+            "glob": "_redirects",
+            "input": "src",
+            "output": "/",
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",  
