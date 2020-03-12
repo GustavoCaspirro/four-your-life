@@ -1,40 +1,49 @@
 <!-- START SCREENSHOT -->
 <section class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="title-heading text-center">Screenshots 4YourLife</h1>
-                <p class="title-desc text-center text-muted mt-4">
-                    Design clean e de fácil usabilidade e excelente experiência para nosso usuário.
-                </p>
-            </div>
-        </div>
-
-        <div class="row mt-5 pt-4">
-            <div class="col-lg-12" #parentContainer>
-                <owl-carousel
-                    [options]="SlideOptions"
-                    [items]="images"
-                    [carouselClasses]="['owl-theme', 'sliding']"
-                >
-                <ng-container *ngFor="let img of images">
-                    <div class="item mt-4">
-                        <div class="screenshot-overlay">
-                            <a class="mfp-image image-link" href="../../assets/images/screenshot/{{img}}"></a>
-                        </div>
-                        
-                        <div class="screenshot-img" class="parent-container">
-                            <img
-                                src="../../assets/images/screenshot/{{img}}"
-                                class="img-fluid"
-                                alt="ScreenShot App"
-                            />  
-                        </div>
-                    </div> 
-                </ng-container>
-                </owl-carousel>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="title-heading text-center">Screenshots 4YourLife</h1>
+        <p class="title-desc text-center text-muted mt-4">
+          Design clean e de fácil usabilidade e excelente experiência para nosso usuário.
+        </p>
+      </div>
     </div>
+    <div class="row mt-5 pt-4">
+      <div
+        class="col-lg-12"
+        #parentContainer
+      >
+        <owl-carousel
+          [options]="SlideOptions"
+          [items]="images"
+          [carouselClasses]="['owl-theme', 'sliding']"
+        >
+          <ng-container *ngFor="let img of images">
+            <div class="item mt-4">
+              <div class="screenshot-overlay">
+                <a
+                  class="mfp-image image-link"
+                  href="../../assets/images/screenshot/{{img}}"
+                >
+                  <span class="img-screenshot">Imagens Screenshot</span>
+                </a>
+              </div>
+              <div
+                class="screenshot-img"
+                class="parent-container"
+              >
+                <img
+                  src="../../assets/images/screenshot/{{img}}"
+                  class="img-fluid"
+                  alt="ScreenShot App"
+                />
+              </div>
+            </div>
+          </ng-container>
+        </owl-carousel>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- END SCREENSHOT -->

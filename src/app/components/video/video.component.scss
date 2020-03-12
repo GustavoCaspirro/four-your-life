@@ -10,6 +10,10 @@
 .video {
     background-color: $dark-green;
 
+    .text-video {
+      display: none;
+    }
+
     .icon-play {
         background-color: $white;
         border-radius: 50%;

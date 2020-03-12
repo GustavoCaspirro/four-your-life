@@ -65,11 +65,15 @@
     width: 100%;
 }
 
-.button-next-page {
+.button-next {
     animation: MoveUpDown 2s linear infinite;
     position: absolute;
     z-index: 1;
-    
+
+    &__text {
+      display: none
+    }
+
     &__icon-next {
         border-radius: 50%;
         display: flex;
@@ -120,7 +124,7 @@
         order: 2;
         padding-bottom: 90px;
         text-align: center;
-        
+
         @media screen and (min-width: 768px) {
             order: 1;
             padding-bottom: 0;

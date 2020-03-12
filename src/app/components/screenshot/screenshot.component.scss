@@ -15,7 +15,7 @@
         height: 100%;
         display: block;
         position: absolute;
-    }   
+    }
 }
 
 
@@ -53,6 +53,7 @@
     color: $white;
     border-radius: 3px;
 }
+
 .item {
     margin: 1.5rem 1rem 0 1rem;
 }
@@ -61,6 +62,10 @@
     img {
         box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15)
     }
+}
+
+.img-screenshot {
+  display: none;
 }
 
 
