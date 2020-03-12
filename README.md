@@ -3,7 +3,7 @@
 
 ## Sobre
 ### Link para a Landing
-* **https://clever-golick-0ee459.netlify.com** - [https://clever-golick-0ee459.netlify.com](https://clever-golick-0ee459.netlify.com)
+* **https://clever-golick-0ee459.netlify.com**(https://clever-golick-0ee459.netlify.com)
 ...
 
 ## Passos para rodar o projeto
