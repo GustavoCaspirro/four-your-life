@@ -10,27 +10,27 @@ export class ClientComponent implements OnInit {
   people = [
     {
       img: 'img-1.jpg',
-      name: 'Bruno',
+      name: 'Bruno Santos',
       jobRole: 'Back End and Android Developer',
-      comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
+      comment: 'Graduado em Ciência da Computação e pós-graduado em Mobile Development.'
     },
     {
       img: 'img-2.jpg',
-      name: 'Gustavo',
+      name: 'Gustavo Caspirro',
       jobRole: 'Front End Developer and UI/UX',
-      comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
+      comment: 'Graduado em Ciência da Computação e pós-graduado em Mobile Development.'
     },
     {
       img: 'img-3.jpg',
-      name: 'Lucas',
+      name: 'Lucas Barcelos',
       jobRole: 'iOS Developer',
-      comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
+      comment: 'Graduado em Engenharia de computação e pós graduado em Mobile Development.'
     },
     {
       img: 'img-3.jpg',
-      name: 'Ricardo',
+      name: 'Ricardo Santa',
       jobRole: 'Developer',
-      comment: '"Aenean vehicula neque turpis at dictum purus malesuada Aenean risus ex sollicitudin nec pharetra in cursus aliquet."'
+      comment: 'Graduado em Engenharia de computação e pós graduado em Mobile Development.'
     }
   ];
 

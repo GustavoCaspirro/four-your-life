@@ -7,7 +7,11 @@
 //
 
 .about-icon {
-    img {
-       height: 30px;
+    svg {
+       height: 50px;
+
+       path {
+        fill: $dark-green;
+       }
     }
 }
