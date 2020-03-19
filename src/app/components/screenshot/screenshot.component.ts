@@ -12,13 +12,7 @@ import 'magnific-popup';
 export class ScreenshotComponent implements OnInit, AfterViewInit {
   @ViewChild('parentContainer') parentContainerElement: ElementRef;
 
-  images = [
-    'img-1.png',
-    'img-2.png',
-    'img-3.png',
-    'img-4.png',
-    'img-5.png'
-  ];
+  images = [];
 
   SlideOptions = {
     items: 3,
@@ -31,13 +25,13 @@ export class ScreenshotComponent implements OnInit, AfterViewInit {
     responsiveClass: true,
     responsive: {
       0: {
-        items: 1
-      },
-      480: {
         items: 2
       },
-      951: {
+      480: {
         items: 3
+      },
+      951: {
+        items: 5
       }
     }
   };
@@ -45,10 +39,18 @@ export class ScreenshotComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.arrayImages();
   }
 
   ngAfterViewInit(): void {
     this.createGalleryMagnificPopup();
+  }
+
+  arrayImages(): void {
+    const numberMaxImages = 22;
+    for (let i = 1; i <= numberMaxImages; i++) {
+      this.images.push(`${i}-min.png`);
+    }
   }
 
   createGalleryMagnificPopup(): void {
