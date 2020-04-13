@@ -4,8 +4,8 @@
   "theme_color": "#0eb2ad",
   "background_color": "#fafafa",
   "display": "fullscreen",
-  "scope": "",
-  "start_url": "",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/images/manifest/icon-72x72.png",
