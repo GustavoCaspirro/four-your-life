@@ -3,7 +3,7 @@
   "short_name": "FourYourLife",
   "theme_color": "#0eb2ad",
   "background_color": "#fafafa",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "icons": [
