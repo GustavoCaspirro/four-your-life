@@ -1,10 +1,10 @@
-import {Directive} from '@angular/core';
+import { Directive } from '@angular/core';
 
 @Directive({
   // tslint:disable-next-line: directive-selector
   selector: '[fylScroll]',
   // tslint:disable-next-line: no-host-metadata-property
-  host: {'(window:scroll)': 'trackScroll($event)'}
+  host: { '(window:scroll)': 'trackScroll($event)' }
 })
 
 export class ScrollDirective {

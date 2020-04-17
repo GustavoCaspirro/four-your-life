@@ -22,7 +22,5 @@ export class HeaderComponent implements OnInit {
 
     currentActiveMenu.classList.remove('active');
     element.currentTarget.classList.add('active');
-
   }
-
 }

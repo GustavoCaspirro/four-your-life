@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { integrantes } from './integrantes.json';
 
 @Component({
   selector: 'fyl-client',
@@ -7,32 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientComponent implements OnInit {
 
-  people = [
-    {
-      img: 'img-1.jpg',
-      name: 'Bruno Santos',
-      jobRole: 'Back End and Android Developer',
-      comment: 'Graduado em Ciência da Computação e pós-graduado em Mobile Development.'
-    },
-    {
-      img: 'img-2.jpg',
-      name: 'Gustavo Caspirro',
-      jobRole: 'Front End Developer and UI/UX',
-      comment: 'Graduado em Ciência da Computação e pós-graduado em Mobile Development.'
-    },
-    {
-      img: 'img-3.jpg',
-      name: 'Lucas Barcelos',
-      jobRole: 'iOS Developer',
-      comment: 'Graduado em Engenharia de computação e pós graduado em Mobile Development.'
-    },
-    {
-      img: 'img-3.jpg',
-      name: 'Ricardo Santa',
-      jobRole: 'Developer',
-      comment: 'Graduado em Engenharia de computação e pós graduado em Mobile Development.'
-    }
-  ];
+  people = integrantes;
 
   SlideOptions = {
     items: 1,
