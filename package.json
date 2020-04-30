@@ -23,7 +23,7 @@
     "@angular/service-worker": "~9.0.2",
     "@mdi/font": "^4.9.95",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "magnific-popup": "^1.1.0",
     "ngx-owl-carousel": "^2.0.7",
     "owl.carousel": "^2.3.4",
